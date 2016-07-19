@@ -1,12 +1,12 @@
 extends ../layout
 block content
-	.contenter
-		.row
-			each item in movies
-				.col-md-2
-					.thumbnail
-						a(href="/movie/#{item._id}")
-							img(src="#{item.poster}", alt="#{item.title}")
-						.caption
-							h3 #{title}
-							p: a.btn.btn-primary(href="/movie/#{title._id}", role="button") 观看预告片
+    .contenter
+        .row
+            each item in movies
+                .col-md-2
+                    .thumbnail
+                        a(href="/movie/#{item._id}")
+                            img(src="#{item.poster}", alt="#{item.title}")
+                        .caption
+                            h3 #{title}
+                            p:a.btn.btn-primary(href="/movie/#{title._id}", role="button") 观看预告片

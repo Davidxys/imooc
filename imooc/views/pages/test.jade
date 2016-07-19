@@ -1,0 +1,9 @@
+extends ../layout
+block content
+    .contenter
+        .row
+            ul
+                for book in books
+                    li=book
+                else 
+                    li sorry
